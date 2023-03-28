@@ -44,6 +44,9 @@ var userSchema = new mongoose.Schema(
       type: Array,
       default: [],
     },
+    RegNo: {
+      type: String,
+    },
   },
   { timestamps: true },
 );

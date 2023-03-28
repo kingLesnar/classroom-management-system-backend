@@ -25,7 +25,10 @@ mongoose
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors());
+// Routes
+const authRoutes = require("./routes/auth");
 
+// MyRoutes
 app.use("/ping", (req, res) => res.end("message working"));
 
 const port = process.env.PORT;
